@@ -1,0 +1,38 @@
+:root {
+  --white: #fdfdfa;
+  --gray: #c8c8c7;
+  --black: #231e17;
+  --yellow-300: #fff174;
+  --green-500: #007552;
+  --green-700: #003c2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p,
+button,
+a {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.container {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}

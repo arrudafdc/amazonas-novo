@@ -1,0 +1,36 @@
+.produto {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.produto header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.produto header h3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.produto header button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.produtoConteudo {
+  max-height: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.produtoConteudo.active {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 1rem;
+}

@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  padding-top: 2rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.header a {
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.875rem;
+}
+
+.header a,
+.header p {
+  text-transform: uppercase;
+}
+
+.header button {
+  background: transparent;
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav {
+  background: var(--green-700);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 0vh;
+
+  transition: 0.5s;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.nav.active {
+  pointer-events: initial;
+  opacity: 1;
+  width: 45vh;
+}
+
+.navMenu {
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: first baseline;
+  padding: 2.75rem 1rem;
+}
+
+.navMenu a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .localeAndNumber {
+    display: none;
+  }
+  .nav.active {
+    width: 100vw;
+    padding-left: 2rem;
+  }
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,9 @@
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/bg.avif");
+  background-size: cover;
+  margin-bottom: 10rem;
+}

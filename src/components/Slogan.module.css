@@ -1,0 +1,23 @@
+.slogan h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+  color: var(--black);
+  font-family: "lora";
+  font-size: 4rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  .slogan h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .slogan h1 {
+    font-size: 2rem;
+  }
+}

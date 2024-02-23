@@ -1,0 +1,55 @@
+.sobreContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 0 2rem;
+  margin-bottom: 10rem;
+}
+
+.sobreContainer img {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.sobreContainer span {
+  font-family: "Lora", serif;
+  color: var(--black);
+}
+
+.sobreContainer p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #adabab;
+}
+
+.sobreContainer button {
+  border: 0;
+  background-color: var(--green-700);
+  color: var(--white);
+  height: 50px;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.725rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sobreContainer button:hover {
+  background: var(--green-500);
+}
+
+@media (max-width: 720px) {
+  .sobreContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .sobreContainer button {
+    width: 100%;
+    justify-content: center;
+  }
+}
